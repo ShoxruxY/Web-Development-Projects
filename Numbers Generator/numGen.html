@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Generator</title>
+    <style>
+        .header h1 {
+            color: forestgreen;
+            margin: 0;
+            font-size: 50px;
+        }
+        .header button {
+            color: white;
+            background-color: forestgreen;
+            border: 2px solid forestgreen;
+            margin: 0;
+            margin-top: 0;
+            font-size: 20px;
+        }
+        .header input {
+            margin: 0;
+            margin-top: 0;
+            font-size: 15px;
+            border: 2px solid forestgreen;
+            text-align: left;
+            padding-right: 200px;
+            padding-left: 5px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            
+        }
+        .title {
+            margin: 5px;
+            font-size: 25px;
+            
+        }
+        .warning {
+            color: red;
+            margin: 0;
+            text-align: left;
+            margin-top: 20px;
+            margin-left: 9px;
+            margin-bottom: 4px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Number Generator</h1>
+        <p class="title">30DaysOfJavaScript: DOM Day 3</p>
+        <p class="title">Author: Yusupov Shokhrukhmirzo</p>
+        <div class="menu">
+            <p class="warning"></p>
+            <input type="text" placeholder="Generate more numbers...">
+            <button onclick="clickMe()">Generate Numbers</button>
+        </div>
+    </div>
+    <div class="numbers">
+
+    </div>
+    <script src="numGen.js"></script>
+</body>
+</html>

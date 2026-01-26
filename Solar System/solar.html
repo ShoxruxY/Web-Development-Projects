@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar System: Document Object Model</title>
+    <style>
+        body {
+            background-image: url('https://i.pinimg.com/originals/95/9f/b1/959fb1f51bc1026ace27acede55e1bc8.gif');
+            position: relative;
+            height: 100vh;
+        }
+        .header {
+            text-align: center;
+        }
+        .header h1 {
+            letter-spacing: 2px;
+            color: white;
+        }
+        .content {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .content input, button {
+            padding: 10px;
+            font-size: 13px;
+            margin: 5px;
+        }
+        .content button {
+            background-color: grey;
+            color: white;
+            border-radius: 4px;
+        }
+        img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 200px;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Calculate a weight of an object on a planet</h1>
+    </div>
+    <div class="content">
+        <input type="text" placeholder="Mass in Kilogram">
+        <input list="countries" placeholder="--select planet--" class="planets">
+        <datalist id="countries">
+            <option value="Mercury">Mercury</option>
+            <option value="Venus">Venus</option>
+            <option value="Earth">Earth</option>
+            <option value="Mars">Mars</option>
+            <option value="Jupiter">Jupiter</option>
+            <option value="Saturn">Saturn</option>
+            <option value="Uranus">Uranus</option>
+            <option value="Neptune">Neptune</option>
+        </datalist>
+        <button onclick="clickMe()">Calculate Weight</button>
+    </div>
+    <img src="https://share.google/0OzO2Y9lBuAqPLnK1" alt="">
+    <script src="solar.js"></script>
+</body>
+</html>
