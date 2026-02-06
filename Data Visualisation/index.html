@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Countries List</title>
+    <style>
+        .body {
+            margin: 0;
+        }
+        .header {
+            background-image: url('image.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            text-align: center;
+            margin: 0;
+            color: white;
+            padding: 100px 200px;
+        }
+        .header h1 {
+            font-size: 60px;
+            letter-spacing: 7px;
+            margin: 0;
+        }
+        .header h3 {
+            margin: 0;
+        }
+        .buttons {
+            color: white;
+        }
+        .buttons button {
+            background-color: rgb(151, 76, 220);
+            border: none;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            color: white;
+            font-size: 10px;
+            padding: 10px;
+        }
+        .input {
+            font-size: 34px;
+            border-radius: 24px;
+            padding-left: 40px;
+            
+        }
+        .countries {
+            display: grid;
+            gap: 10px;
+            grid-template-columns: repeat(6, 1fr);
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-left: 60px;
+            margin-right: 60px;
+            margin-top: 20px;
+        }
+        .country {
+            background-image: url('map.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #d4af37;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>World Countries List</h1>
+        <h3>Total Number of Countries: 250</h3>
+        <p class="hiddenText"></p>
+        <div class="buttons">
+            <button>STARTING WORD</button>
+            <button>SEARCH WITH ANY WORD</button>
+            <button class="reverse">A to Z</button>
+        </div>
+        <input type="text" class="input">
+    </div>
+    <div class="countries">
+
+    </div>
+    <script src="main.js" type="module"></script>
+</body>
+</html>
