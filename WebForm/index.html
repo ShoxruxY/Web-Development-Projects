@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Form</title>
+    <style>
+        body {
+            font-family: 'Bebas Neue', sans-serif;
+        }
+        .form {
+            width: 40%;
+            margin: auto;
+        }
+        h2 {
+            margin-bottom: 10px;
+            margin-top: 0;
+            text-align: left;
+        }
+        input {
+            font-size: 30px;
+            padding-right: 200px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+        }
+        button {
+            display: block;
+        }
+        h1 {
+            text-align: center;
+        }
+        b {
+            margin: auto;
+            color: orange;
+            margin-left: 40px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        button {
+            background-color: rgb(88, 84, 84);
+            color: white;
+            font-size: 34px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <h1>Validating Web Forms</h1>
+    <div class="form">
+        <h2>First Name</h2>
+        <input type="text" class="first-name">
+        <b class="warningOne"></b>
+
+        <h2>Last Name</h2>
+        <input type="text" class="last-name">
+        <b class="warningTwo"></b>
+
+        <h2>Email</h2>
+        <input type="text" class="email">
+        <b class="warningThree"></b>
+
+        <h2>Password</h2>
+        <input type="password" class = "password">
+        <b class="warningPassword"></b>
+
+        <h2>Telephone</h2>
+        <input type="text" class="phone">
+        <b class="warningPhone"></b>
+
+        <h2>Your bio</h2>
+        <input type="text" class="bio">
+        <b class="warningBio"></b>
+
+        <button>Submit</button>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
